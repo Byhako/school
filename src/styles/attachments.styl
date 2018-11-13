@@ -1,0 +1,58 @@
+@import 'const.styl'
+
+.cotainerAttachments
+  background-color: containerColor
+  height: auto
+  padding: 20px
+  margin: 20px
+
+.containerBtn
+  background-color: containerColor
+  height: 100px
+  display: flex
+  align-items: center
+  
+
+.containerUpload
+  height: 120px
+  width: 100%
+  padding-top: 25px
+  margin-top: 30px
+  border: borderUpload
+  border-radius: 5px
+  color: white
+  vertical-align: middle
+  cursor: pointer
+
+.labelUpload
+  display: block
+  width: 100%
+  text-align: center
+
+.containerList
+  margin: 10px 0
+  padding: 0
+
+.fileItem
+  margin: 7px 0
+  position: relative
+  list-style: none
+  color: white
+  &:hover
+    background-color: selectColorHover
+
+.fileName
+  display inline
+
+.iconDelete
+  color: white
+  font-weight: bold
+  font-size: 20px
+  cursor: pointer
+  margin-right: 2px
+  &:hover
+    color: red
+
+#btnAttachments
+  float: right
+  width: 73px

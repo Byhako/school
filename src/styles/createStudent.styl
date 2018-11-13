@@ -1,0 +1,83 @@
+@import 'const.styl'
+
+.navCreateStudent
+  width: containerWidth
+  height: 40px
+  position: relative
+  margin: 0 auto
+  
+.tem
+  height: 40px
+  //border: 1px dashed red
+  display: flex
+  justify-content: center
+  
+.tem a
+  display: flex
+  justify-content: center
+
+.link
+  display: flex
+  align-items: center
+  justify-content: center
+  text-decoration: none
+  transition: .2s
+  height: 19px
+  width: 17px
+  position: absolute
+  top: 10px
+  color: colorDisable
+  font-size: fontSizeMedium
+  
+.is-active
+  color: selectColor !important
+
+.point
+  border-radius: 50%
+  width: 10px
+  height: 10px
+  background: colorDisable
+  position: absolute
+  bottom: 0px
+  z-index: 1
+
+.pActive
+  background: selectColor
+  
+.line
+  border-top: 2px solid colorDisable
+  height: 2px
+  width: 24%
+  position: absolute
+  bottom: 4px
+  z-index: 0
+
+.lineActive
+  border-color: selectColor
+  
+.line1
+  left: 13%
+
+.line2
+  left: 38%
+
+.line3
+  left: 63%
+  
+
+.is-submit
+  background: white
+  color: black
+  
+.idStudent span
+  color: #1A2133
+  
+.iconCheck
+  margin-right: 2px
+  display: none
+
+.iconShow
+  display: flex
+  
+#checkEmail, #checkStutent, #checkPhoto, #checkAttachments
+  color: white

@@ -1,0 +1,96 @@
+@import 'const.styl'
+
+.containerPhoto
+  background-color: containerColor
+  height: max-content
+  padding: 20px
+  margin: 20px 0
+
+.containerDisplay
+  display: flex
+  position: relative
+  margin: auto
+  
+video
+  width: 100%
+  height: 100%
+  border-radius: 5px
+
+.camera
+  border: borderPhoto
+  display: flex
+  justify-content: center
+  align-items: center
+  border-radius: 5px
+
+.photo
+  border: borderPhoto
+  display: flex
+  justify-content: center
+  align-items: center
+  border-radius: 5px
+  
+
+#imgPhoto
+  width: 100%
+  height: 84% !important
+
+#btnPhoto
+  margin-top: 30px
+  float: right
+  
+#btnCapture
+  margin-top: 30px
+  left: 15px
+  width: 180px
+  
+@media screen and (max-width: 1200px)
+  #imgPhoto
+    height: 68%
+
+@media screen and (max-width: 992px)
+  #imgPhoto
+    height: 51%
+    
+@media screen and (max-width: 767px)
+  #imgPhoto
+    height: 36% 
+    
+.errorCameraPhoto
+  height: 25px
+  width: 73px
+  background: errorColor
+  color: black
+  font-size: fontSizeBig
+  display: none
+  justify-content: center
+  align-items: center
+  position: absolute
+  right: 0
+  top: 0
+
+.messageErrorPhoto
+  padding-top: 25px
+  position: absolute
+  top: 30%
+  display: none
+  
+.labelProcessing
+  position: absolute
+  top: 50%
+  left: 45%
+  background-color: selectColor
+  color: black
+  font-size: fontSizeMedium
+  border: none
+  border-radius: 1px
+  height: 25px
+  width: 96px
+  display: none
+  justify-content: center
+  align-items: center
+  overflow: hidden
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4)
+  
+.hidden
+  display: none

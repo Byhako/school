@@ -1,0 +1,149 @@
+@import 'const.styl'
+
+.containerMatch
+  background-color: containerColor
+  height: max-content
+  padding: 20px
+  margin: 20px 0
+  
+.displaySearch
+  height: 370px
+  display: flex
+  position: relative
+  margin: auto
+  justify-content: center
+  
+.cameraSearch
+  height: 368px
+  width: 48%
+  border: borderPhoto
+  display: flex
+  justify-content: center
+  align-items: center
+  
+.photoSearch
+  height: 368px
+  width: w = 48%
+  border: borderPhoto
+  display: none
+  justify-content: center
+  align-items: center
+  margin-left: 24px
+
+.errorCamera
+  height: 25px
+  width: 73px
+  background: errorColor
+  color: black
+  font-size: fontSizeBig
+  display: none
+  justify-content: center
+  align-items: center
+  position: absolute
+  right: 26%
+
+.cameraError
+  border-color: #F8614E
+  
+.messageError
+  padding-top: 25px
+  position: absolute
+  top: 30%
+  display: block
+
+.labelError
+  color: errorColor
+  display: flex
+  justify-content: center
+  
+#btnPhotoSearch
+  margin-top: 30px
+  right: 15px
+  display: none
+  justify-content: center
+  position: relative
+  
+#btnCapture
+  position: relative
+
+.tagSearch
+  position: absolute
+  top: 50%
+  left: 45%
+  background-color: selectColor
+  color: black
+  font-size: fontSizeMedium
+  border: none
+  border-radius: 1px
+  height: 25px
+  width: 96px
+  display: none
+  justify-content: center
+  align-items: center
+  overflow: hidden
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4)
+    
+#noMatch
+  background-color: errorColor
+  
+.inputSearch
+  display: inline
+  margin: auto 0
+  padding: 2px 5px
+  height: 25px
+  border: 1px solid white
+  font-size: fontSizeMedium
+  background-color: containerColor
+  color: white
+
+.btnSearchStudent
+  position: relative
+  float: right
+  margin: 0
+  width: 7vw
+
+.btnNextSearch
+  position: absolute
+  right: 0
+  height: 25px
+  width: 10%
+  margin-top: 2%
+  font-size: fontSizeBig
+  background-color: selectColor
+  display: none
+  border: none
+  border-radius: 1px
+  cursor: pointer
+
+.show
+  display: inline !important
+  float: right
+  
+.hidden
+  display: none
+  
+#photoList
+  object-fit: cover
+  height: 50px
+
+.itemTable
+  display: flex
+  margin-bottom: 15px
+  align-items: center
+  
+.itemTable p
+  margin: 0 0 0 40px
+  color: white
+  width: 25%
+  
+.linkProfile
+  cursor: pointer
+  &:hover
+    color: selectColor
+    text-decoration: underline
+    
+.errorInput
+  border-color: errorColor
+
+.errorBtn
+  background-color: errorColor

@@ -1,0 +1,33 @@
+@import 'const.styl'
+
+.myNav
+  background: navcolor
+  height: 70px
+  display: flex
+  align-items: center
+
+.itemNav
+  color: colorText
+  text-align: center
+
+.elNav
+  display: flex
+  //border: 1px dashed red
+
+.myNav a, .myNav span
+  display: flex
+  flex: 1
+  align-items: center
+  justify-content: center
+  text-decoration: none
+  transition: .2s
+  font-size: fontSizeSmall
+
+#name
+  font-size: fontSizeHuge
+  font-weight: bold
+  color: colorText
+  margin: 0
+
+.is-selected
+  color:  selectColor

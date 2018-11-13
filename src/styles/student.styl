@@ -1,0 +1,308 @@
+@import 'const.styl'
+
+.containerScanStudent
+  background-color: containerColor
+  padding: 20px
+  margin-top: 20px
+  
+.containerInfoStudent
+  background-color: containerColor
+  padding: 20px
+  margin: 20px 0
+  height: 520px
+
+/* TABS */
+
+.containerTabs
+  display: flex
+  align-items: center
+  
+.tab1
+  display: flex
+  justify-content: center
+  align-items: center
+  height: fontSizeMedium
+  width: 43px
+  margin-right: 15px
+  border-bottom: borderTab
+  font-size: fontSizeMedium
+  color: colorText
+  cursor: pointer
+  padding-bottom: 4px
+
+.tab2
+  display: flex
+  justify-content: center
+  align-items: center
+  height: fontSizeMedium
+  width: 34px
+  border-bottom: borderTab
+  font-size: fontSizeMedium
+  color: colorText
+  cursor: pointer
+  padding-bottom: 4px
+  
+.tabActive
+  border-bottom: borderTabActive
+  color: selectColor
+  font-weight: bold
+  
+/* SCAN */
+
+.containerScan
+  margin: 30px auto
+  height: max-content
+  
+.scan
+  border: 1px dashed #fff
+  height: 367px
+  padding-top: 150px
+  width: 100%
+  color: #fff
+  cursor: pointer
+  margin: auto
+  display: block
+  
+.containerCanvas
+  position: relative
+  
+.tagUploading, .tagProcessing
+  position: absolute
+  top: 50%
+  left: 45%
+  background-color: selectColor
+  color: black
+  font-size: fontSizeMedium
+  border: none
+  border-radius: 1px
+  height: 25px
+  width: 96px
+  display: none
+  justify-content: center
+  align-items: center
+  overflow: hidden
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4)
+
+.canvas
+  height: 340px
+  width: 340px
+  margin: auto
+
+  
+#btnDeleteID
+  margin: 0
+  font-size: 20px
+  cursor: pointer
+  &:hover
+    color: red
+  
+.nameImage
+  color: white
+  margin-left: 15px
+  display: none
+
+/* FORM MATCH */
+
+.titleMathc
+  color: white
+  font-size: fontSizeMedium
+
+.form
+  display: flex
+  width: 100%
+  justify-content: center
+  margin: 4vh auto
+  position: relative
+
+.listMatch
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  padding: 0
+  margin: 0
+  color: white
+  list-style:none
+
+.elementMatch
+  font-size: 16px
+  height: 25px
+  display: flex
+  align-items: center
+  position: relative
+  width: 50%
+  margin-bottom: 16px
+
+.containerItem
+  height: 100%
+  width: 97%
+  border: 1px solid white
+  position: absolute
+
+.labelMatch
+  position: absolute
+  left: 0
+  height: 25px
+  display: flex
+  align-items: center
+  color: colorText
+  width: 154px
+  padding-left: 5px
+  font-size: 13px
+  
+.customSelect
+  display: block
+  height: 23px
+  width: 120px
+  float: right
+
+/* STUDENT INFO */
+
+.labelForm
+  color: colorDisable
+  font-size: fontSizeMedium
+  
+.title-form
+  border-bottom: borderInfo
+  height: fontSizeMedium
+  width: 95px
+  display: inline
+  font-size: fontSizeMedium
+  color: colorDisable
+  padding-bottom: 4px
+  
+.activate
+  color: selectColor
+  border-color: selectColor
+
+.lableActivate
+  color: white
+  
+.form-student
+  display: flex
+  width: 100%
+  justify-content: center
+  margin: 4vh auto
+  position: relative
+
+.list
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  padding: 0
+  margin: 0
+  color: white
+  list-style: none
+
+.element-info
+  width: 50%
+  height: 50px
+  margin-bottom: 10px
+  position: relative
+
+.lb-student
+  display: flex
+  width: 100%
+  justify-content: start
+  font-size: fontSizeMedium
+  color: colorDisable
+  margin-bottom: 5px
+
+.disabled
+  cursor: not-allowed
+  
+.info-match
+  height: 23px
+  width: 97%
+  border: 1px solid white
+  display: flex
+  align-items: center
+  padding-left: 4px
+  margin: 0
+  position: absolute
+  
+
+.ipt-student
+  // right: 0
+  height: 23px
+  border: 1px solid colorDisable
+  padding: 0
+  text-align: center
+  background-color: containerColor
+  width: 97%
+  position: absolute
+  
+
+#btnStudentInfo
+  margin: 5px 0
+  float: right
+  display: inline-block
+  visibility: hidden
+  
+
+.ready
+  width: 75%
+  height: 100%
+  
+/*  LOADER */
+.myloader {
+  font-size: 1px;
+  text-indent: -9999em;
+  width: 11em;
+  height: 11em;
+  border-radius: 50%;
+  background: #090909;
+  background: -moz-linear-gradient(left, #090909 10%, rgba(9,9,9, 0) 42%);
+  background: -webkit-linear-gradient(left, #090909 10%, rgba(9,9,9, 0) 42%);
+  background: -o-linear-gradient(left, #090909 10%, rgba(9,9,9, 0) 42%);
+  background: -ms-linear-gradient(left, #090909 10%, rgba(9,9,9, 0) 42%);
+  background: linear-gradient(to right, #090909 10%, rgba(9,9,9, 0) 42%);
+  position: relative;
+  -webkit-animation: load3 1.4s infinite linear;
+  animation: load3 1.4s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.myloader:before {
+  width: 50%;
+  height: 50%;
+  background: #090909;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+}
+.myloader:after {
+  background: #49c379;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  content: '';
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
